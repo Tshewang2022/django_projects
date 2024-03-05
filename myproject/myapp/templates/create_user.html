@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Create User</title>
+</head>
+<body>
+	<h1>Create User</h1>
+	<form method="post" >
+    	{% csrf_token %}
+    	{{ form.as_p }}
+    	<button type="submit">Submit</button>
+	</form>
+<!-- <script >
+  const form = document.getElementById('myForm');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted successfully!');
+// document.querySelectorAll('fields').forEach(fields => fields.value = '');
+          
+        });
+</script> -->
+</body>
+
+</html>
